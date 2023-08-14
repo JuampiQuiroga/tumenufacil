@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body>
+    <!--HTML SEMANTICO-->
+<nav>
+    <!--Ruta Interna o Relativa-->
+    <a href="../index.html">Home</a>
+    <a href="./Menu.html">Tu Menu</a>
+    <a href="./Eventos.html">Eventos</a>
+    <a href="./Seguridadalimentaria.html">Seguridad Alimentaria</a>
+    <a href="#">Contacto</a>
+</nav>
+
+<main>
+    <form action="procesar.php" method="post">
+         <div>
+            <!--Input Nombre-->
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" placeholder="Juan">
+
+            <!--Input Apellido-->
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" placeholder="Perez">
+        </div>
+        <div>
+            <!--Input Email-->
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="hola@servidor.com.ar">
+            <!--Input pass-->
+            <label for="pass">Contraseña:</label>
+            <input type="password" name="pass" placeholder="Ingresar Contraseña" required>
+        </div>
+            <!--Radio-->
+            <h3>Seleccione su género</h3>
+            <label for="genero">Femenino</label>
+            <input type="radio" name="genero" value="femenino">
+
+            <label for="genero">Masculino</label>
+            <input type="radio" name="genero" value="masculino">
+
+            <label for="genero">Prefiero No Decirlo</label>
+            <input type="radio" name="genero" value="prefiero no decirlo">
+            
+        
+
+
+            <!--Checkbox-->
+            <h3>Qué servicios te interesa adquirir</h3>
+            <label for="servicio1">Asesoramiento para Armar tu Carta</label>
+            <input type="checkbox" name="servicio1" value="Armartucarta">
+
+            <label for="servicio2">Asesoramiento para Armar tu Evento</label>
+            <input type="checkbox" name="servicio2" value="Armartuevento">
+
+            <label for="servicio3">Asesoramiento en Seguridad Alimentaria</label>
+            <input type="checkbox" name="servicio3" value="Seguridadalimentaria">
+
+            <!--Text Area-->
+            <h3>Dejame tu Mensaje</h3>
+            <textarea name="Mensaje" id="" cols="30" rows="10"></textarea>
+
+        <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar Formulario</button>
+        </div>
+
+    </form>
+
+</main>
+
+
+</body>
+</html>

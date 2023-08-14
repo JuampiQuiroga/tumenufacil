@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <!--favicon-->
+    <link rel="shortcut icon" href="./assets/iconos/food-and-restaurant.png" type="image/x-icon">
+    <!--CSS Boostrap-->
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Tu Menu Facil-Home</title>
+</head>
+
+<body>
+<!--Navbar con Flexbox-->
+<nav>
+    <a href="../index.html">
+        <img class="icon-food" src="./assets/iconos/food-and-restaurant.png" alt="icon-food">
+    </a>
+
+    <a href="#">Home</a>
+    <a href="./paginas/Menu.html">Tu Menu</a>
+    <a href="./paginas/Eventos.html">Eventos</a>
+    <a href="./paginas/Seguridadalimentaria.html">Seguridad Alimentaria</a>
+    <a href="./paginas/Contacto.html">Contacto</a>
+
+</nav>
+
+<!--Grilas BTS-->
+
+<!--class="container"-->
+<div class="container">
+    <div class="row">
+        <div class="col bg-danger">Columna 1</div>
+        <div class="col bg-primary">Columna 2</div>
+        <div class="col bg-success">Columna 3</div>
+    </div>
+  </div>
+
+<!--Pseudoclases-->
+
+<!--:nth:child(N)
+<div class="grupo">
+    <div class="lista">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>Elemento 6</li>
+        <li>Elemento 7</li>
+        <li>Elemento 8</li>
+        <li>Elemento 9</li>
+        <li>Elemento 10</li>
+
+    </div>
+</div>-->
+
+<!--First and last of type
+    div class="grupo">
+    <div class="elementos">
+        <div>Soy un Div</div>
+        <p>Soy un parrafo</p>
+        <span>Hola soy un span</span>
+        <p>Hola soy un parrafo 2</p>
+        <div>Soy un div 2</div>
+
+    </div>    
+</div>-->
+
+<!--First and last child
+     <div class="grupo">
+    <div class="parrafos">
+        <p>Soy un parrafo 3</p>
+        <p>Soy el parrafo del medio</p>
+        <p>Hola soy un parrafo 4</p>
+
+    </div>    
+</div>-->
+
+<!--Metodologia BEM-->
+
+<section class="contenedor">
+    <!--Bloque 1-->
+    <article class="tarjeta">
+        <img class="tarjeta__imagen" src="./assets/burger.jpeg" alt="">
+        
+        <article class="tarjeta__texto">
+            <h3 class="tarjeta__titulo">
+                <a class="tarjeta__enlace" href="#">Link pruebas</a>
+            </h3>
+            <p class="tarjeta__parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus debitis iusto nihil soluta recusandae error deleniti id fuga labore commodi.</p>
+
+            <!--Bloque 2-->
+        <button class="boton">Saber más</button>
+
+        </article>
+
+    </article>
+
+</section>
+
+
+<!--Box Modelling-->
+<!--Elementos de Bloque-->
+<div class="bloque">
+    <h1 class="elemento-bloque">Elemento de Bloque</h1>
+    <!--h1 class="elemento-bloque">Elemento de Bloque</-->
+</div>
+
+
+<!--Elementos de linea-->
+<a class="elemento-linea" href="#">Elemento de linea</a>
+<a class="elemento-linea" href="#">Elemento de linea</a>
+
+<header>
+    Encabezado
+    <div></div>
+    <img src="./assets/tumenu-home.jpg" alt="">
+</header>
+
+<main>
+    Contenido principal
+    <section>
+        Sección 1
+        <article>
+            <!--El Mundial de Rugby-->
+            <h1 class="encabezado-home"> Pruba de tipografia</h1>
+            
+            Articulo 1 - Sección 1
+
+            <p class="font-main">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vitae iusto hic fuga cupiditate iste pariatur iure assumenda mollitia optio.
+            </p>
+            <p>Nuestros Servicios
+                <!--lista ordenada-->
+                <ol>
+                    <li>Servicio A</li>
+                    <li>Servicio B</li>
+                    <li>Servicio C</li>
+                </ol>
+            </p>
+        </article>
+
+        <article>
+            <!--los jugadores mas destacados de la liga-->
+            Articulo 2 - Seccion 1
+              <p>Quienes Somos
+                  <!--lista desrdenada-->
+                  <ul>
+                      <li> A</li>
+                      <li> B</li>
+                      <li> C</li>
+                  </ul>
+              </p>
+        </article>
+    </section>
+
+    <section>
+    <!--FUTBOL-->
+    Sección 2
+    <article>
+        <!--El Mundial de Qatar-->
+        Articulo 1 - Sección 2
+    </article>
+    ><div></div>
+    <!--iframe-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/H134ml0aeoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+</main>
+
+<footer>
+    Pie de Página
+</footer>
+<!--Boostrap JS download-->
+<script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

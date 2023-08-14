@@ -1,0 +1,430 @@
+/*Tipografias*/
+/*Fuente Local*/
+@font-face {
+    font-family: 'fuente-principal';
+    src: url('../assets/Fuentes/Lato-Regular.ttf');
+}
+
+/*Fuente Externa*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+/*Selector de Tipo Reset*/
+*{
+    margin: 0;
+    padding: 0%;
+}
+/*Selector de Tipo ID*/
+#barra-navegacion{
+    /*Propiedad*/
+    background-color:#ecd71a;
+}
+
+/*Selector tipo clase*/
+.estilo-links{
+    font-size: 20px;
+    font-weight: bold;
+    color: darkgoldenrod;
+}
+
+/*Selector de Etiqueta*/
+img{
+    width: 50%;
+}
+
+/*tipografia interna*/
+.font-main{
+    font-family: 'fuente-principal', sans-serif;
+}
+
+/*tipografia externa*/
+.encabezado-home{
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: bold;
+    color: #0000ff;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Box Modeling*/
+.bloque{
+    border: 1px solid #151515;
+    width: 50%;
+}
+
+.elemento-bloque{
+    border: 5px solid #0000ff;
+    width: 50%;
+    height: 50%;
+    padding: 20px 30px 20px 30px ;
+    margin:20px 30px 20px 30px ;
+}
+
+.elemento-linea{
+    border: 5px solid #76ec0f
+}
+
+/*Flexbox teoria*/
+/*Contenedor Padre*/
+.flex-container{
+/*Activamos flex*/
+display: flex;
+/*definimos cual sera nuestro main axis, y si sera row o column, el otro sera el cross axis*/
+flex-direction: row;
+/*dispone los elementos flexibles en el eje principal*/
+justify-content: flex-start;
+/*dispone los elementos flexibles en el eje secundario*/
+align-content: flex-start;
+
+/*Defino el desborde de los flex items*/
+flex-wrap: wrap;
+align-content: space-between;
+
+border:2px solid #0000ff;
+background-color: aquamarine;
+padding: 15px;
+margin: 15px;
+height: 500px;
+}
+
+.caja{
+    /*Box Modelling*/
+    width: 200px;
+    height: 200px;
+    border: 1px solid salmon;
+    background-color: #ecd71a;
+    margin: 5px;
+
+
+    /*Tipografia*/
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Propiedades de los flex items o hijos*/
+.c1{
+    background-color: #76ec0f;
+    /*defino el orden de aparición*/
+    order: 2;
+    /*derecho a crecer*/
+    flex-grow: 5;
+}
+
+.c2{
+    background-color: blueviolet;
+    order: 3;
+    flex-grow: 1;
+}
+
+.c3{
+    background-color: burlywood;
+    order: 1;
+    flex-grow: 1;
+}
+
+/*CSS Grid Practica*/
+.cabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+    /*Tipografía*/
+    font-family: 'fuente-principal', sans-serif;
+    font-size: 50px;
+
+    /*Box Modelling*/
+    padding: 20px 0px;
+}
+
+.grid-container{
+    /*Box Modelling*/
+    width: 90%;
+    max-width: 1000px;
+    border: 10px solid #000;
+    margin:auto;
+
+    /*Tipografia*/
+    font-size: 50px;
+    text-align: center;
+
+    /*Activamos Grid*/
+    display: grid; 
+    /*Definimos la cantidad de las columnas y el ancho de las mismas*/
+    grid-template-columns: repeat(3,1fr);
+
+    /*Definimos la cantidad de las filas y el alto de las mismas*/
+    grid-template-rows: repeat(4,1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+
+}
+
+.grid-container > div{
+    /*Box Modeling*/
+    border: 1px solid #000;
+    padding: 20px;
+    background-color: antiquewhite;
+    color: rgb(31, 32, 32);
+}
+
+.titulos-fotos{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Grid Template Areas*/
+.contenedor-grid{
+    /*Tipografia*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+
+    /*box modeling*/
+    width: 90%;
+    height: 600px;
+    margin: 40px auto;
+    border: 5px groove #0000ff;
+
+    /*Activamos Grid*/
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 10px;
+
+    /*Grid Areas*/
+    grid-template-areas: 
+    "Header Header Header"
+    "Nav    Main    Aside"
+    "Nav    Main    Aside"
+    "Footer Footer  Footer"
+    ;
+
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1{
+    background-color: cadetblue;
+    grid-area: Header;
+}
+
+.item2{
+    background-color: aqua;
+    grid-area: Nav;
+}
+
+.item3{
+    background-color: #76ec0f;
+    grid-area: Main;
+}
+
+.item4{
+    background-color: blueviolet;
+    grid-area: Aside;
+}
+
+.item5{
+    background-color: #151515;
+    grid-area: Footer;
+    color: aliceblue;
+}
+.titulos-eventos{
+    /*Tipografia*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Navbar con Flexbox*/
+.icon-food{
+    width: 100px;
+    border-radius: 50%;
+}
+
+nav{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+a{
+    font-family: 'fuente-principal',sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+/*Pseudoclases*/
+a:hover{
+    font-size: 19px;
+    color: #0000ff;
+    border-bottom: 3px solid #0000ff;
+}
+
+a:active{
+
+    background-color: rgb(221, 248, 249);
+    color: cadetblue;
+    font-size: 19px;
+    padding: 10px;
+}
+
+a:link{
+    color: blueviolet;
+}
+
+a:visited{
+    color: brown;
+}
+
+/*nth-child(N)*/
+.grupo{
+    width: 500px;
+    margin: 20px auto;
+    background-color: aqua;
+}
+
+.lista :nth-child(odd){
+    background-color: #ecd71a;
+    color: #0000ff;
+    font-size: 20px;
+}
+
+/*First and last of type*/
+.elementos p:first-of-type{
+    text-transform: uppercase;
+}
+
+.elementos p:last-of-type{
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*First and last child*/
+.parrafos p:first-child{
+    background-color: crimson;
+    color: aliceblue;
+}
+
+.parrafos p:last-child{
+    background-color: rgb(227, 129, 148);
+    color: aliceblue;
+}
+
+/*Metodologia BEM*/
+.contendor{
+    max-width: 500px;
+    width: 100%;
+    margin: 20px;
+
+}
+
+/*Bloque 1*/
+.tarjeta{
+    width: 600px;
+    border: 5px double rgb(158, 154, 141);
+    padding: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.tarjeta__imagen{
+    width: 60%;
+}
+
+.tarjeta__texto{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.tarjeta__enlace{
+    color: #44820d;
+    padding: 20px auto;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'fuente-principal', sans-serif;
+}
+
+.tarjeta__parrafo{
+    font-size: 25px;
+}
+
+/*Bloque 2*/
+.boton{
+    background-color: #000;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    color: aliceblue;
+    border-radius: 100px;
+}
+
+/*Modificador - boton alternativo si quiero cambiarlo en html*/
+.boton--alternativo{
+    font-size: 18px;
+    background-color: #0000ff;
+}
+
+
+/*Mediaqueris*/
+/*siempre al final los mediaqueris y se comienza con mobile*/
+@media screen and (max-width:480px){
+    
+
+    .contenedor-grid{
+        /*Tipografia*/
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+    
+        /*box modeling*/
+        width: 90%;
+        height: 600px;
+        margin: 40px auto;
+        border: 5px groove #0000ff;
+    
+        /*Activamos Grid*/
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5,auto);
+        gap: 10px;
+    
+        /*Grid Areas*/
+        grid-template-areas: 
+        "Header"
+        "Nav"    
+        "Main"
+        "Aside"
+        "Footer"
+        ;
+    
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1328px) {
+    .titulos-eventos{
+        /*Tipografia*/
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+    }
+}
